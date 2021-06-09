@@ -1,14 +1,20 @@
 <template>
+<<<<<<< HEAD
   <div class="recommend">
     <div class="slider-wrapper">
       <div class="slider-content">
         <slider v-if="sliders.length" :sliders="sliders"></slider>
       </div>
     </div>
+=======
+  <div class="recommend" >
+    recommend
+>>>>>>> master
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import { getRecommend } from '@/service/recommend'
 import Slider from '@/components/base/slider/slider'
   export default {
@@ -25,11 +31,33 @@ import Slider from '@/components/base/slider/slider'
       const result = await getRecommend()
       console.log(result)
       this.sliders = result.sliders
+=======
+  
+  export default {
+    name: 'recommend',
+    components: {
+     
+    },
+    data() {
+      return {
+       
+      }
+    },
+    computed: {
+      
+    },
+    async created() {
+      
+    },
+    methods: {
+     
+>>>>>>> master
     }
   }
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 .recommend {
     position: fixed;
     width: 100%;
@@ -51,4 +79,7 @@ import Slider from '@/components/base/slider/slider'
       }
     }
 }
+=======
+
+>>>>>>> master
 </style>
